@@ -28,7 +28,7 @@ public class IpsController {
 	@RequestMapping("/find")
 	@ResponseBody
 	public List<IpsEntity> find() {
-		return ipsDao.findPage(1, 2);
+		return ipsDao.findPage("t_ips",1, 2);
 	}
 	
 	@RequestMapping("/delete/{id}")

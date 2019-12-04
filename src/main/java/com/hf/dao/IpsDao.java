@@ -23,6 +23,6 @@ public interface IpsDao {
 	@Update("update t_ips set updatetime = now(), ip = #{ip}, useport = #{useport},datafrom = #{datafrom},state = #{state}, type = #{type} where id = #{id}")
 	int update(IpsEntity IpsEntity);
 	
-	@Select("select * from t_ips limit #{page},#{pageSize}")
-	List<IpsEntity> findPage(Integer page,Integer pageSize);
+	@Select("select * from ${tablename} limit #{page},#{pageSize}")
+	List<IpsEntity> findPage(String tablename,Integer page,Integer pageSize);
 }
