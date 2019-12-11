@@ -24,3 +24,4 @@ spring:
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
       stat-view-servlet:
         allow: 127.0.0.1
+param: 234234
