@@ -18,7 +18,7 @@ public interface IpsDao {
          "<script>",
          "insert into t_ips(ip,createtime,state,type,datafrom) values ",
          "<foreach collection='ipsEntities' item='item' index='index' separator=','>",
-         "(#{item.ip},#{item.createtime},#{item.state},#{item.type},#{item.datafrom})",
+         "(#{item.ip},now(),#{item.state},#{item.type},#{item.datafrom})",
          "</foreach>",
          "ON DUPLICATE KEY UPDATE ip=values(ip)",
          "</script>"

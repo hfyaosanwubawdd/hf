@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hf.Thread.JiSuThread;
+import com.hf.Thread.LiuLiuThread;
 import com.hf.Thread.NimaThread;
 import com.hf.Thread.XiLaThread;
 import com.hf.util.ConstanceUtil;
@@ -26,6 +27,7 @@ public class IpsController {
 		ThreadPoolSingleton.getinstance().executeThread(new XiLaThread());
 		ThreadPoolSingleton.getinstance().executeThread(new NimaThread());
 		ThreadPoolSingleton.getinstance().executeThread(new JiSuThread());
+		ThreadPoolSingleton.getinstance().executeThread(new LiuLiuThread());
 		return "ok";
 	}
 	
