@@ -24,10 +24,10 @@ public class IpsController {
 			}
 			ConstanceUtil.SPIDER_STATE = 1;
 		}
-		ThreadPoolSingleton.getinstance().executeThread(new XiLaThread());
-		ThreadPoolSingleton.getinstance().executeThread(new NimaThread());
-		ThreadPoolSingleton.getinstance().executeThread(new JiSuThread());
-		ThreadPoolSingleton.getinstance().executeThread(new LiuLiuThread());
+//		ThreadPoolSingleton.getinstance().executeThread(new XiLaThread());
+//		ThreadPoolSingleton.getinstance().executeThread(new NimaThread());
+//		ThreadPoolSingleton.getinstance().executeThread(new JiSuThread());
+//		ThreadPoolSingleton.getinstance().executeThread(new LiuLiuThread());
 		return "ok";
 	}
 	
